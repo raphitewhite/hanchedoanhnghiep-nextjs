@@ -177,3 +177,4 @@ Nếu gặp vấn đề khi deploy, kiểm tra:
 2. Kiểm tra file `vercel.json` có đúng cấu hình
 3. Đảm bảo các assets đã được copy vào `public/`
 4. **Quan trọng:** Đảm bảo đã thêm environment variables trên Vercel dashboard
+"# hanchedoanhnghiep-nextjs" 

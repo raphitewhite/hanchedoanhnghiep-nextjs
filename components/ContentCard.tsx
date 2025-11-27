@@ -81,38 +81,33 @@ export default function ContentCard({ onAppealClick }: ContentCardProps) {
   return (
     <div className={styles.contentCard} id="contentCard">
       <header className={styles.intro}>
-        <span className={styles.eyebrow}>Meta · Policy Violation Warning</span>
-        <h1>Policy Violation Warning - Action Required</h1>
+        <span className={styles.eyebrow}>Meta · Business Account Restricted</span>
+        <h1>We've Restricted Your Business Account</h1>
         <p>
-          We have detected that your Facebook account or page has violated our Community Standards and Terms of Service. Our automated systems
-          have reviewed your account activity and identified policy violations that require immediate attention. Failure to address these
-          violations may result in account restrictions, limitations, or permanent suspension. To resolve this issue and restore full access
-          to your account, please complete the verification and appeal process below.
+          We have restricted your business account due to violations of our advertising policies and Community Standards. Your account has been reviewed by our automated systems and manual review team, and we have determined that your account does not comply with Meta's advertising policies. This restriction has been applied to protect our community and maintain the integrity of our platform.
         </p>
       </header>
 
       <div className={styles.invitationChip}>
-        <span>Violation Case ID: <strong>847Z5-KTBB4-4T79</strong></span>
+        <span>Business ID: <strong>7631904853721741</strong></span>
       </div>
 
       <div className={styles.notesCard}>
         <div className={styles.notesHead}>
           <div className={styles.notesIcon} aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="10" cy="10" r="10" fill="#1877F2"/>
+              <circle cx="10" cy="10" r="10" fill="#DC2626"/>
               <circle cx="10" cy="6" r="1" fill="white"/>
               <path d="M10 9V14" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
           </div>
           <div>
-            <h3>Important Notes</h3>
+            <h3>What This Means</h3>
           </div>
         </div>
         <ul>
-          <li>Please ensure that your contact information (email and page admin) is correct to avoid delays in processing your appeal.</li>
-          <li>Our review team may reach out within 2 business days if additional details are needed to resolve the violation.</li>
-          <li>Any request containing incomplete or inaccurate information may result in a delayed review or account restriction.</li>
-          <li>Failure to respond within 7 days may result in permanent account suspension.</li>
+          <li>You cannot create ads or manage advertising campaigns</li>
+          <li>You cannot use or share advertising features related to your business account</li>
         </ul>
       </div>
 
@@ -121,20 +116,18 @@ export default function ContentCard({ onAppealClick }: ContentCardProps) {
           <Image src="/image.png" alt="Facebook Policy Violation Warning" width={640} height={360} priority />
         </div>
         <div className={styles.ctaCard}>
-          <h3>Appeal Policy Violation</h3>
+          <h3>Request Review</h3>
           <p>
-            To resolve this policy violation and restore full access to your account, please submit an appeal with accurate information.
-            Our review team will investigate your case and respond within 24-48 hours.
+            If you believe your account has been restricted in error, you can request a review. Our team will examine your account and respond within 24-48 hours.
           </p>
           <p>
-            Please provide the required information below to complete your appeal request. Missing or incomplete details may delay the
-            review process and could result in further account restrictions.
+            Please provide accurate information about your business to help us review your account. Incomplete or inaccurate details may delay the review process.
           </p>
           <button className={styles.ctaButton} type="button" onClick={onAppealClick}>
-            Submit Appeal Request
+            Request Review
           </button>
           <p className={styles.ctaNote}>
-            Policy violation detected on <span id="invitationDate"></span>. Action required within 7 days.
+            Account restriction applied on <span id="invitationDate"></span>. Please take action as soon as possible.
           </p>
         </div>
       </div>
@@ -188,8 +181,7 @@ export default function ContentCard({ onAppealClick }: ContentCardProps) {
       </section>
 
       <p className={styles.footnote}>
-        We automatically identify potential privacy risks, including when collecting, using or sharing personal information, and developing
-        methods to reduce these risks. <a href="#">Read more about Privacy Policy.</a>
+        Our technology helps identify businesses that may be violating our advertising policies and Community Standards. This helps us maintain a safe and trustworthy platform for everyone. <a href="#">Learn more about our policies.</a>
       </p>
     </div>
   );

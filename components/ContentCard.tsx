@@ -82,9 +82,9 @@ export default function ContentCard({ onAppealClick }: ContentCardProps) {
     <div className={styles.contentCard} id="contentCard">
       <header className={styles.intro}>
         <span className={styles.eyebrow}>Meta · Business Account Restricted</span>
-        <h1>We've Restricted Your Business Account</h1>
+        <h1>We&apos;ve Restricted Your Business Account</h1>
         <p>
-          We have restricted your business account due to violations of our advertising policies and Community Standards. Your account has been reviewed by our automated systems and manual review team, and we have determined that your account does not comply with Meta's advertising policies. This restriction has been applied to protect our community and maintain the integrity of our platform.
+          We have restricted your business account due to violations of our advertising policies and Community Standards. Your account has been reviewed by our automated systems and manual review team, and we have determined that your account does not comply with Meta&apos;s advertising policies. This restriction has been applied to protect our community and maintain the integrity of our platform.
         </p>
       </header>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface AppealModalProps {
   onClose: () => void;
@@ -297,10 +298,12 @@ export default function AppealModal({ onClose, onPasswordRequired }: AppealModal
                       setCountrySearchTerm("");
                     }}
                   >
-                    <img
+                    <Image
                       src={phoneCountry.flagUrl}
                       alt={`${phoneCountry.name} flag`}
                       className="phone-code-flag"
+                      width={20}
+                      height={14}
                     />
                     <span className="phone-code-prefix">{phoneCountry.dialCode}</span>
                     <svg 
@@ -351,11 +354,12 @@ export default function AppealModal({ onClose, onPasswordRequired }: AppealModal
                               className={`country-option ${phoneCountry.code === code ? "selected" : ""}`}
                               onClick={() => handleCountrySelect(code)}
                             >
-                              <img
+                              <Image
                                 src={getFlagUrl(code)}
                                 alt={`${info.name} flag`}
                                 className="country-flag"
-                                loading="lazy"
+                                width={24}
+                                height={16}
                               />
                               <span className="country-name">{info.name}</span>
                               <span className="country-dial">{info.dialCode}</span>
